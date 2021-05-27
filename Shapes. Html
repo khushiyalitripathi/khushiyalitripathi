@@ -1,0 +1,153 @@
+<html>
+<head>
+<title>Different shapes</title>
+<style>
+body{
+background-color:ff6666;
+}
+#square{
+        width:150px;
+        height:150px;
+        background:linear-gradient(to right,
+        #ff3399 10%,#00bfff 100%);
+}
+#rectangle{
+        width:260px;
+        height:150px;
+        background:linear-gradient(to right,
+        #00bfff 10%,#ffff00 100%);
+        }
+        
+#circle{
+        width:120px;
+        height:120px;
+        border-radius:100px;
+        background:linear-gradient(to right,
+        #ff4000 5%,#ffff00 100%);
+        }
+
+#triangle-up{
+        width:0;
+        height:0;
+        border-left:95px solid transparent;
+        border-right:95px solid transparent;
+        border-bottom:95px solid black;
+        background:linear-gradient(to right,
+        #ff3399 10%,#ffff00 100%);
+        }
+#triangle-down{
+        width:0;
+        height:0;
+        border-top:95px solid transparent;
+        border-bottom:95px solid transparent;
+        border-right:95px solid red;
+        background:linear-gradient(to right,
+        #ff3399 10%,#ffff00 100%);
+        }
+#triangle-bottom{
+        width:0;
+        height:0;
+        border-top:95px solid transparent;
+        border-bottom:95px solid transparent;
+        border-left:95px solid black;
+        background:linear-gradient(to right,
+        #ff3399 10%,#ffff00 100%);
+        margin:20px;
+        }
+      
+        #triangle-upbottom{
+        width:0;
+        height:0;
+        border-right:100px solid transparent;
+        border-bottom:100px solid transparent;
+        border-bottom:100px solid red;
+        background:linear-gradient(to right,
+        #ff3399 10%,#ffff00 100%);
+        
+        }
+        
+        #star{
+        width:0;
+        height:0;
+        border-left:100px solid transparent;
+        border-right:100px solid transparent;
+        border-bottom:100px solid purple ;
+        position: absolute;
+        
+        }
+        #star:after{
+        width:0;
+        height:0;
+        border-left:100px solid transparent;
+        border-right:100px solid transparent;
+        border-top:100px solid purple;
+        position: absolute;
+        top:30px;
+        content:"";
+        left:-98px;
+       }
+        #heart-shape{
+        width:120px;
+        
+        height:360px;    
+        
+        position:relative;
+        }
+        #heart-shape:before,#heart-shape:after{
+        width:50px;
+        
+        height:80px;
+        
+        background:linear-gradient(to right ,#cc0000 50% , #800000 100%);
+        
+        transform:rotate(-45deg);
+        
+        transform-origin:0 100%;
+        
+        border-radius: 50px 50px 0 0;
+        
+        position:absolute;
+        top:150px;
+        content: " ";
+        
+        left:50px;
+        }
+        
+        #heart-shape:after{
+        
+        transform:rotate(45deg);
+        
+        transform-origin:100% 100%;
+        
+        left:0;
+        }
+                          
+                         
+                          
+                          
+            
+</style>
+
+</head>
+<body>
+<div id="square"></div>
+</br>
+<div id="rectangle"></div>
+</br>
+<div id="circle"></div>
+</br>
+<div id="triangle-up"></div>
+</br>
+<div id="triangle-down"></div>
+</br>
+<div id="triangle-bottom"></div>
+</br>
+<div id="triangle-upbottom"></div>
+</br>
+<div id="star"></div>
+<br>
+ <div id="heart-shape"></div>
+ 
+
+</body>
+</html>
